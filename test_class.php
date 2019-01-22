@@ -1,16 +1,18 @@
 <?php
-class Base{
-    public $name='Kannika';
-    //public function hello(){
-        //echo 'Hello Kannika';
-    //}
-    function __construct(){
+class bankAccount{
+    public $accountname;
+    private $totalbalance;
+    
+    function __construct($acc_name,$balance){
+        $this->accountname ='$acc_name';
+        $this->totalbalance='$balance';
+
         echo 'Hello Mook';
     }
 
     
 }
-$x = new Base();
+$x = new bankAccount('Kannika',20000);
 //$x->hello();
 
 
